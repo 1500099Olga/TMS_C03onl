@@ -4,13 +4,13 @@
  */
 public class Lesson_3 {
     public static void main(String[] args) {
-        int a = 2;
+        int a = -3;
         if (a == 0) {
             System.out.println(10);
         } else if (a > 0) {
-            System.out.println(a++);
+            System.out.println(++a);
         } else {
-            System.out.println(a - 2);
+            System.out.println(a -= 2);
         }
     }
 }
