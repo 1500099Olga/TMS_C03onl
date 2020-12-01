@@ -12,6 +12,7 @@ public class Homework_3 {
         Lesson4();
         Lesson5();
         Lesson6();
+        Lesson7();
     }
 
     public static void Lesson1() {
@@ -154,18 +155,48 @@ public class Homework_3 {
         System.out.println(Arrays.toString(array));
 
 
-
         for (i = 1; i < array.length; i++) {
-            if (i > 0){
-            if (array[i - 1] >= array[i]) {
-                System.out.println("Прогрессия не возрастающая ");
-                break;}
+            if (i > 0) {
+                if (array[i - 1] >= array[i]) {
+                    System.out.println("Прогрессия не возрастающая ");
+                    break;
+                }
             }
-                } if(i == array.length-1) {
-                System.out.println("Прогрессия возрастающая ");
-            }
+        }
+        if (i == array.length - 1) {
+            System.out.println("Прогрессия возрастающая ");
+        }
 
     }
+
+    public static void Lesson7() {
+        System.out.println();
+        System.out.println();
+        System.out.println("Lesson 7:");
+
+        Random random = new Random();
+        System.out.println();
+        int[] array1 = new int[12];
+        int i = 0;
+        int indexmax = 0;
+        for (; i < array1.length; i++) {
+            array1[i] = random.nextInt(16);
+        }
+        System.out.println(Arrays.toString(array1));
+
+        int[] array2 = Arrays.copyOf(array1, array1.length);
+        Arrays.sort(array2);
+        int max = array2[12 - 1];
+
+        System.out.println(max);
+        for (; i < array1.length; i++) {
+            if (indexmax == array1[i])
+                indexmax = i;
+            System.out.println(i + " - index определен");
+
+        }
+    }
+}
 }
 
 
