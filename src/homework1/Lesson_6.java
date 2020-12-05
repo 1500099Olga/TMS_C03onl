@@ -1,4 +1,4 @@
-package Homework_1;
+package homework1;
 
 // Даны 2 числа. Вывести большее из них
 public class Lesson_6 {

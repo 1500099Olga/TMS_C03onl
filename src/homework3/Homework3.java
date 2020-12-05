@@ -1,11 +1,9 @@
+package homework3;
 import java.util.*;
 import static java.util.Arrays.*;
 import static java.util.Arrays.sort;
 
-
-public class Homework_3 {
-
-
+public class Homework3 {
     public static void main(String[] args) {
         Lesson1();
         Lesson2();
@@ -366,16 +364,6 @@ public class Homework_3 {
                     " созданный масив ))");
         }
     }
+
+
 }
-
-
-
-
-
-
-
-
-
-        
-
-

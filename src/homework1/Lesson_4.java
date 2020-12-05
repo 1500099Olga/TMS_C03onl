@@ -1,4 +1,4 @@
-package Homework_1;
+package homework1;
 
 //Даны 3 целых числа. Найти количество положительных чисел в исходном наборе.
 public class Lesson_4 {

@@ -1,8 +1,9 @@
+package homework3;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Homework_3_PlusTasks {
+public class HomeworkPlusTasks {
     public static void main(String[] args) {
         Task1();
         Task2();
@@ -36,7 +37,7 @@ public class Homework_3_PlusTasks {
 
                 array1 [i] = array[i];
                 if(array1 [i] != 0){
-                a = a*array1 [i];}
+                    a = a*array1 [i];}
                 count++;
             }
         }
@@ -112,10 +113,12 @@ public class Homework_3_PlusTasks {
                 a = a + (double) array[i];
                 count++;
 
-        } middle = a / count;
+            } middle = a / count;
         }
         System.out.println(Arrays.toString(array));
         System.out.println("Cреднее арифметическое значение элементов, которые превосходят С = " + middle);
     }
 
 }
+
+
