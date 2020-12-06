@@ -11,11 +11,12 @@ public class HomeworkSquareMatrix {
         MatrixTask1();
         MatrixTask2();
         MatrixTask3();
+        MatrixTask4();
         MatrixTask5();
     }
 
-/*Почитать сумму четных элементов стоящих на главной диагонали.
-*/
+    /*Почитать сумму четных элементов стоящих на главной диагонали.
+     */
     public static void MatrixTask1() {
         System.out.println();
         System.out.println("Task 1:");
@@ -42,10 +43,8 @@ public class HomeworkSquareMatrix {
             for (j = 0; j < a; j++) {
                 if (i == j) {
                     if (mas[i][j] % 2 == 0) {
-
                         sum = sum + mas[i][j];
                     }
-
                 }
             }
         }
@@ -84,12 +83,10 @@ public class HomeworkSquareMatrix {
                         mas[i][j] = mas[i][j];
                         System.out.printf("%3d", mas[i][j]);
                     }
-
                 }
             }
         }
         System.out.println(" - нечетные элементы находящиеся под главной диагональю(включительно)");
-
     }
 
     /*Проверить произведение элементов какой диагонали больше.
@@ -147,8 +144,46 @@ public class HomeworkSquareMatrix {
         } else {
             System.out.println("Произведение главной диагонали матрицы равна произведению побочной");
         }
-
     }
+
+    /*Создайте массив из 20 случайных целых чисел из отрезка [0;20]. Выведите массив на экран в строку.
+    Замените каждый элемент с нечётным индексом на ноль. Снова выведете массив на экран на отдельной строке.
+     */
+    public static void MatrixTask4() {
+        System.out.println();
+        System.out.println("Task 4:");
+        Scanner sc = new Scanner(System.in);
+        Random random = new Random();
+        System.out.println("Введите число, равное количеству стобцов и строк > 1: ");
+        int a = sc.nextInt();
+        if (a < 2) {
+            System.out.println("Вы ввели число меньше 2, что не соответствует уcловию.");
+            MatrixTask4();
+        }
+        int[][] mas = new int[a][a];
+        int sum = 0;
+        int i;
+        int j = 0;
+        for (i = 0; i < a; i++) {
+            for (j = 0; j < a; j++) {
+                mas[i][j] = random.nextInt(51);
+                System.out.printf("%3d", mas[i][j]);
+            }
+            System.out.println();
+        }
+        System.out.println();
+        for (i = 0; i < a; i++) {
+            for (j = a - 1; j >= 0; j--) {
+                if (j < a - i - 1) {
+                    if (mas[i][j] % 2 == 0) {
+                        sum = sum + mas[i][j];
+                    }
+                }
+            }
+        }
+        System.out.println(sum + " - сумма четных элементов стоящих над побочной диагональю (не включительно).");
+    }
+
     /*Транспонировать матрицу(1 столбец станет 1-й строкой, 2-й столбец - 2-й строкой и т. д.)
      */
     public static void MatrixTask5() {
@@ -184,7 +219,7 @@ public class HomeworkSquareMatrix {
                 System.out.printf("%3d", mas[i][j]);
             }
             System.out.println();
-        }
+        } sc.close();
     }
 }
 
