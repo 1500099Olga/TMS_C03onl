@@ -67,7 +67,7 @@ public class Game {
                     b[i][j] = gamer;
 
                 } else {
-                    System.out.println("Вы указали повторяющийся столбец и строку, пропускаете ход");
+                    System.out.println("Вы указали повторяющийся столбец и строку, пропускаетe ход");
                 }
                 for (i = 0; i < b.length; i++) {
                     for (j = 0; j < b[i].length; j++) {
@@ -76,16 +76,12 @@ public class Game {
                     System.out.println();
                 }
 
-                System.out.println("Компьютер: ");
+                System.out.println("Компьютер ставит " + gamercomp + ":");
                 int from = 0;
                 int to = 2;
                 Random ran = new Random();
                 i = ran.nextInt(2);
                 j = ran.nextInt(2);
-                int i1 = i + 1;
-                int j1 = j + 1;
-                System.out.println(m + ":" + i1);
-                System.out.println(k + ":" + j1);
                 if (b[i][j] != gamer && b[i][j] != gamercomp) {
                     b[i][j] = gamercomp;
 
@@ -96,7 +92,7 @@ public class Game {
                         System.out.println();
                     }
                 } else {
-                    System.out.println("Компьютер указал повторяющийся столбец и строку, пропускаете ход");
+                    System.out.println("Компьютер указал повторяющийся столбец и строку, пропускает ход");
                 }
             }
 
@@ -105,7 +101,7 @@ public class Game {
                     || b[1][2] != " * " || b[1][1] != " * " || b[2][0] != " * " || b[2][1] != " * " || b[2][2] != " * ");
 
             System.out.println("!!!");
-        } return;
+        }
     }
 }
 
