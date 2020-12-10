@@ -4,12 +4,10 @@ public class AirTransport extends Transport{
     private double wingspan;
     private double runwayTakeOff;
 
-    AirTransport(double wingspan, double runwayTakeOff) {
+    AirTransport(int power, int speed, int weigth, String brand, double wingspan, double runwayTakeOff) {
+        super(power, speed, weigth, brand);
         this.wingspan = wingspan;
         this.runwayTakeOff = runwayTakeOff;
-    }
-    AirTransport (){
-        super();
     }
 
     public double getWingspan() {

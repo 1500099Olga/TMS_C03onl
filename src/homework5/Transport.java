@@ -16,9 +16,6 @@ public class Transport {
 
 
         }
-        public Transport() {
-                super();
-        }
 
         public double getPower() {
                 return power;

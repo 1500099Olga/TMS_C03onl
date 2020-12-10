@@ -4,8 +4,8 @@ public class MilitaryAirTransport extends AirTransport {
     private boolean catapult;
     private int rocket;
 
-    MilitaryAirTransport( boolean catapult, int rocket){
-        super();
+    MilitaryAirTransport( int power, int speed, int weight, String brand, double wingspan, double runwayTakeOff, boolean catapult, int rocket){
+        super(power, speed, weight, brand,wingspan, runwayTakeOff);
         this.catapult = catapult;
         this.rocket = rocket;
     }
