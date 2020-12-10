@@ -21,4 +21,10 @@ public class PassengerLandTransport extends LandTransport {
     public void getInfoTransport() {
 
     }
+    public static void getInfo() {
+        
+        System.out.println("Легковой автомобиль следующей модификации: мощность " + getPower() + "л.с, максимальная скорость: "+ getSpeed()+ "км/ч, масса: " + getWeight() + " т, марка:  " + getBrand() + "/n"
+        ", количество колес: " + getWheels() + ", расход топлива:  " + getFuelRate() + ", тип кузова " + type + ", количество пассажиров: " + passenger);
+
+    }
 }
