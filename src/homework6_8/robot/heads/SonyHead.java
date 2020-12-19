@@ -1,4 +1,4 @@
-package robot.heads;
+package homework6_8.robot.heads;
 
 public class SonyHead implements IHead {
     private int price;

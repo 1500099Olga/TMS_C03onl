@@ -1,4 +1,4 @@
-package robot.legs;
+package homework6_8.robot.legs;
 
 
 public class SamsungLeg implements ILeg {

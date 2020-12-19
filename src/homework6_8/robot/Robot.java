@@ -1,11 +1,8 @@
-package robot;
+package homework6_8.robot;
 
-import robot.hands.IHand;
-import robot.hands.*;
-import robot.heads.IHead;
-import robot.heads.*;
-import robot.legs.ILeg;
-import robot.legs.*;
+import homework6_8.robot.hands.IHand;
+import homework6_8.robot.heads.IHead;
+import homework6_8.robot.legs.ILeg;
 
 public class Robot implements IRobot {
     private IHead head;
@@ -53,7 +50,7 @@ public class Robot implements IRobot {
     }
 
     /**
-     * Get the cost of a robot
+     * Get the cost of a homework6_8.robot
      *
      * @return int
      */

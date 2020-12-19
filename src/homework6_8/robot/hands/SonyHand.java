@@ -1,4 +1,4 @@
-package robot.hands;
+package homework6_8.robot.hands;
 
 public class SonyHand implements IHand{
     private int price;

@@ -1,4 +1,4 @@
-package robot.legs;
+package homework6_8.robot.legs;
 
 public class SonyLeg implements ILeg {
     private int price;
